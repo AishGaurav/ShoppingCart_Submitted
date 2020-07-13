@@ -18,6 +18,7 @@ export class CheckOutComponent implements OnInit {
   ngOnInit() {
     this.productService.isProductPage.next(false);
     this.productService.isCheckOutPage.next(true);
+    this.productService.isCheckoutButton.next(false);
     this.getCartItems();
   }
 
