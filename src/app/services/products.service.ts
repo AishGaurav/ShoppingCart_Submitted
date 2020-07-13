@@ -10,6 +10,7 @@ export class ProductService {
     API_PATH : string = '../assets/data/';
     isProductPage = new Subject<boolean>();
     isCheckOutPage = new Subject<boolean>();
+    isCheckoutButton = new Subject<boolean>();
 
     constructor(
         private http : HttpClient 
