@@ -1,0 +1,17 @@
+<div class='navbar-container'>
+    <div class='logo' style='padding-left: 30px;'>
+        <img src='../../assets/images/shop.png' >
+        <h4 *ngIf='productPage' style='margin-left:20px;'>Products</h4>
+        <h4 *ngIf='checkoutPage' style='margin-left:20px;'>Check Out</h4>
+    </div>
+    <nav style="display: flex; float: right; padding-right: 30px;">
+        <ul class='nav-items'>
+            <li><a href='#'></a></li>
+            <li><a href='#'></a></li>
+            <li><a [routerLink]="['/products']" routerLinkActive="router-link-active" >Back</a></li>
+        </ul>       
+    </nav>   
+</div>
+
+<!-- <app-products></app-products> -->
+

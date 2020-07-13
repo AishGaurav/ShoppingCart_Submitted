@@ -1,0 +1,88 @@
+/*
+.parent-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+ 
+  th { 
+    color: rgba(0,0,0,.54); 
+    font-weight: 500; 
+  }
+  td, th { 
+    //padding: 10px; 
+    border: 1px solid #ccc; 
+    //text-align: left; 
+    text-align: center;
+    font-size: 14px;
+  }
+
+
+.img:active{
+    height: 20px !important;
+    transform: translateY(3px) !important; // on-press effect
+}
+img:hover{
+    cursor: pointer;
+}
+*/
+
+body{
+  margin-top: 100px;
+}
+
+.parent{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  //background-color: lightblue;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  width: 300px;
+  height: 320px;
+  justify-content: space-between;
+  padding:10px !important;
+  margin: 5px;
+  
+}
+
+.card-container:hover{
+  transform: translateY(3px) !important; // on-press effect
+}
+
+.description{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  padding: 2px;
+  height: 60px;
+}
+
+.action-container{
+  display: flex;
+  padding: 2px;
+  .button{
+    margin:auto;
+    border: 1px  solid dodgerblue ;
+  }
+}
+
+.img{
+  height: 188px !important;
+  width: 280px !important;
+  object-fit: cover;
+}
+

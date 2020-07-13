@@ -1,0 +1,9 @@
+{
+    "cartItems" : [ 
+        { "id":6, "name":"pizza-6", "price":350 },
+        { "id":11, "name":"pizza-11", "price":70 },
+        { "id":17, "name":"pizza-17", "price":180 },
+        { "id":20, "name":"pizza-20", "price":149 }
+    ]
+}
+

@@ -1,0 +1,21 @@
+<div class='parent'>
+    <div class='card-container' *ngFor = 'let i of productList'>
+        <div class='card' style='padding:10px;'>
+            <div class='image-container'>
+                <img src="../../assets/images/pizza-1.jpg" style='height: 188px !important; width: 280px !important; object-fit: cover;'>
+            </div>
+            <div class='description'>
+                <h3 style='color: dodgerblue; margin: auto;'>{{i.name}} | {{i.price |currency:'INR':'symbol-narrow'}}</h3>
+            </div>
+            
+            <div class='action-container'>
+                <button class="button" (click)='addToCart(i)'>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf='cartItemsFlag' style='padding: 15px;'>
+    <button class="button" style='background-color: orange; color: #fff; float: right;' (click)='checkOut()'><b>Checkout</b></button>
+</div>
+

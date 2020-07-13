@@ -1,0 +1,61 @@
+<!-- <div class='parent-container'>
+    <div>
+        <h2 style='text-align: center;'>Check Out</h2>
+    </div>
+    
+    <div class='data-table'>
+        <table>
+            <thead class='header' style='text-align: center;'>
+            <tr>
+                <th>PRODUCT</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+                <th>REMOVE</th>
+            </tr>
+            </thead>          
+            <tbody>
+            <tr>
+                <td>Pizza-1</td>
+                <td>100</td>
+                <td style="display: flex; align-items: center; justify-content: space-evenly;">
+                    <img src='../../assets/icons/plus.svg' style='height: 20px;'>
+                    <h4>2</h4>
+                    <img src='../../assets/icons/minus.svg' style='height: 20px;'>
+                </td>
+                <td (click)='delete()'><img src='../../assets/icons/delete.svg' style='height: 20px;'></td>
+            </tr>
+            
+            <tr>
+                <td>Pizza-2</td>
+                <td>3000</td>
+                <td>3</td>
+                <td class='delete'><img src='../../assets/icons/delete.svg' style='height: 20px;'></td>
+            </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+ -->
+
+
+ <div class='parent'>
+    <div class='card-container' *ngFor='let i of cartItems'>
+        <div class='card' style='padding:10px;'>
+            <div class='image-container'>
+                <img src="../../assets/images/pizza-1.jpg" style='height: 188px !important; width: 280px !important; object-fit: cover;'>
+            </div>
+            <div class='description'>
+                <h3 style='color: dodgerblue; margin: auto;'>{{i.name}} | {{i.price | currency:'INR':'symbol-narrow'}}</h3>
+            </div>
+            
+            <div class='action-container'>
+                <button class="button"><img src='../../assets/icons/plus.svg' style='height: 20px;'></button>
+                <button class="button" style='border:1px solid #f0f8ff; background-color: #f8f8ff;'><img src='../../assets/icons/minus.svg' style='height: 20px;'></button>
+                <button class="button" style='border:1px solid firebrick;' (click)='delete(i)'><img src='../../assets/icons/delete.svg' style='height: 20px;'></button>
+            </div>
+        </div>
+    </div>
+</div>
+
