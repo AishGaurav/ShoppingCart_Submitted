@@ -39,13 +39,9 @@ export class ProductsComponent implements OnInit {
     this.cartItems.push(item);
     console.log('ITEMS IN CART = ' + JSON.stringify(this.cartItems));
     if(this.cartItems.length != 0){
+      this.productService.isCheckoutButton.next(true);
       this.cartItemsFlag = true;
     }
-  }
-
-  checkOut(){
-    this.authService.checkOut = true;
-    this.router.navigate(['checkout']);
   }
 
 }
