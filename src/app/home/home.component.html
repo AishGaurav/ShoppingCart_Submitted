@@ -6,6 +6,7 @@
     </div>
     <nav style="display: flex; float: right; padding-right: 30px;">
         <ul class='nav-items'>
+            <li><button *ngIf='checkoutButton' class="button" style='background-color: orange; color: #fff; float: right;' (click)='checkOut()'>Checkout</button></li>
             <li *ngIf='checkoutPage'><a [routerLink]="['/products']" routerLinkActive="router-link-active" >Back</a></li>
         </ul>       
     </nav>   
