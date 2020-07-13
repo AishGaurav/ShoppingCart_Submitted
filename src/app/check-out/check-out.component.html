@@ -1,46 +1,4 @@
-<!-- <div class='parent-container'>
-    <div>
-        <h2 style='text-align: center;'>Check Out</h2>
-    </div>
-    
-    <div class='data-table'>
-        <table>
-            <thead class='header' style='text-align: center;'>
-            <tr>
-                <th>PRODUCT</th>
-                <th>PRICE</th>
-                <th>QUANTITY</th>
-                <th>REMOVE</th>
-            </tr>
-            </thead>          
-            <tbody>
-            <tr>
-                <td>Pizza-1</td>
-                <td>100</td>
-                <td style="display: flex; align-items: center; justify-content: space-evenly;">
-                    <img src='../../assets/icons/plus.svg' style='height: 20px;'>
-                    <h4>2</h4>
-                    <img src='../../assets/icons/minus.svg' style='height: 20px;'>
-                </td>
-                <td (click)='delete()'><img src='../../assets/icons/delete.svg' style='height: 20px;'></td>
-            </tr>
-            
-            <tr>
-                <td>Pizza-2</td>
-                <td>3000</td>
-                <td>3</td>
-                <td class='delete'><img src='../../assets/icons/delete.svg' style='height: 20px;'></td>
-            </tr>
-            
-            </tbody>
-        </table>
-    </div>
-    
-</div>
- -->
-
-
- <div class='parent'>
+<div class='parent'>
     <div class='card-container' *ngFor='let i of cartItems'>
         <div class='card' style='padding:10px;'>
             <div class='image-container'>
