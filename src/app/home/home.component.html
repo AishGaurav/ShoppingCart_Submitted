@@ -6,12 +6,7 @@
     </div>
     <nav style="display: flex; float: right; padding-right: 30px;">
         <ul class='nav-items'>
-            <li><a href='#'></a></li>
-            <li><a href='#'></a></li>
-            <li><a [routerLink]="['/products']" routerLinkActive="router-link-active" >Back</a></li>
+            <li *ngIf='checkoutPage'><a [routerLink]="['/products']" routerLinkActive="router-link-active" >Back</a></li>
         </ul>       
     </nav>   
 </div>
-
-<!-- <app-products></app-products> -->
-
